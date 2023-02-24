@@ -1,0 +1,167 @@
+ .left {
+    text-align: left;
+    border-bottom: #000000 solid;
+    margin-bottom: 1%;
+    padding: 1%;
+ }
+
+ .middle {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+ }
+
+ .cart {
+   min-width: 50%;
+ }
+
+ .item {
+    width: 500px;
+    padding: 10px;
+    margin-bottom: 1%;
+    text-align: left;
+ }
+
+ .logo-image-size {
+   width: 25%;
+ }
+ .item a {
+    color: #000000;
+    font-size: 20pt;
+}
+
+.margin {
+    margin-top: 0px;
+    font-size: 20pt;
+}
+
+ img {
+    max-width: 100%;
+ }
+
+ .active {
+    font-weight: bold;
+    background-color: yellow;
+ } 
+
+ body {
+    font-family: Arial, Helvetica, sans-serif;
+ }
+
+ .nav-link {
+    font-size: 30px;
+    margin-bottom: 1%;
+    display: block ;
+    text-decoration: none;
+    color: #000000;
+ }
+
+ .nav-bar-links {
+    margin-bottom: 5%;
+ }
+
+ .item:hover {
+    background-color: yellow;
+    font-weight: bold;
+ }
+
+ .tagline {
+    font-size: 40pt;
+ }
+
+ .border {
+    border: 2px solid #000000;
+ }
+
+ .remove-text {
+   font-weight: bold;
+ }
+
+.cart-item {
+   width: 40%;
+   padding: 10px;
+   margin-bottom: 1%;
+   text-align: center;
+}
+
+.cart-item-description {
+   font-size: 30pt;
+   /* font-weight: lighter; */
+}
+
+.cart-border {
+   border: 2px solid #000000;
+   max-width: 40%;
+}
+
+.cart-margin {
+   font-size: 30pt;
+   margin-bottom: 1%;
+}
+
+.cart-total {
+   font-size: 30pt;
+   border-top: #000000 solid;
+   width: 60%;
+}
+
+.cart-checkout {
+   padding: 4%;
+}
+
+.block {
+   display: block;
+   width: 100%;
+   border:#000000 solid 2pt;
+   background-color: yellow;
+   padding: 20px 30px;
+   font-size: 20px;
+   font-weight: bold;
+   cursor: pointer;
+   text-align: center;
+}
+
+.product-description {
+   text-align: left;
+   font-size: 20pt;
+   width: 30%;
+   margin-left: auto;
+   margin-right: auto;
+}
+
+input, label {
+   display: block;
+   width: 50%;
+}
+
+ #add-to-cart {
+   font-size: 15pt; 
+   background-color: yellow;
+   display: inline;
+   width: 58%;
+   font-size: 1em;
+}
+
+#price {
+   display: inline;
+   width:33%;
+   font-size: 0.8em;
+   padding: 10%;
+}
+
+select {
+   width:100%;
+}
+
+.price-and-cart {
+   width:100%;
+}
+
+.product-border {
+   border: 2px solid #000000;
+   max-width: 30%;
+}
+
+
+
