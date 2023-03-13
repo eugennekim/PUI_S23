@@ -1,15 +1,18 @@
  .left {
-    text-align: left;
-    border-bottom: #000000 solid;
-    margin-bottom: 1%;
-    padding: 1%;
+    float: left;
+   text-align: left;
+    width: 33%;
+    /* margin-bottom: 1%;
+    padding: 1%; */
  }
 
  .middle {
-    text-align: center;
+   float: left;
+    /* text-align: center; */
+    width: 66%;
     display: flex;
-    align-items: center;
     flex-direction: column;
+    margin-left: 1%;
  }
 
  .cart {
@@ -17,15 +20,15 @@
  }
 
  .item {
-    width: 500px;
-    padding: 10px;
+    width: 25%;
+    padding: 2%;
     margin-bottom: 1%;
     text-align: left;
  }
 
- .logo-image-size {
+ /* .logo-image-size {
    width: 25%;
- }
+ } */
  .item a {
     color: #000000;
     font-size: 20pt;
@@ -41,24 +44,30 @@
  }
 
  .active {
+    float: right;
     font-weight: bold;
     background-color: yellow;
  } 
 
  body {
     font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
  }
 
  .nav-link {
-    font-size: 30px;
-    margin-bottom: 1%;
+    float: right;
+    margin: 5% 10% 5% 10%;
+    font-size: 50px;
     display: block ;
     text-decoration: none;
     color: #000000;
  }
 
  .nav-bar-links {
+   border-bottom: solid black;
+    width: 100%;
     margin-bottom: 5%;
+    float: right;
  }
 
  .item:hover {
@@ -68,6 +77,8 @@
 
  .tagline {
     font-size: 40pt;
+    text-align: left;
+    padding-bottom: 10%;
  }
 
  .border {
@@ -79,31 +90,32 @@
  }
 
 .cart-item {
-   width: 40%;
-   padding: 10px;
    margin-bottom: 1%;
-   text-align: center;
+   text-align: left;
 }
 
 .cart-item-description {
-   font-size: 30pt;
+   font-size: 25pt;
+   text-align: left;
+   padding-left: 5%;
    /* font-weight: lighter; */
 }
 
 .cart-border {
    border: 2px solid #000000;
-   max-width: 40%;
 }
 
 .cart-margin {
-   font-size: 30pt;
+   font-size: 20pt;
    margin-bottom: 1%;
+   text-align: right;
 }
 
 .cart-total {
-   font-size: 30pt;
+   font-size: 20pt;
    border-top: #000000 solid;
    width: 60%;
+   text-align: left;
 }
 
 .cart-checkout {
@@ -112,22 +124,20 @@
 
 .block {
    display: block;
-   width: 100%;
    border:#000000 solid 2pt;
    background-color: yellow;
-   padding: 20px 30px;
+   padding: 3% 4%;
    font-size: 20px;
    font-weight: bold;
    cursor: pointer;
-   text-align: center;
 }
 
 .product-description {
    text-align: left;
-   font-size: 20pt;
-   width: 30%;
-   margin-left: auto;
-   margin-right: auto;
+   font-size: 30pt;
+   width: 20%;
+   margin-left: 9%;
+   margin-right: 9%;
 }
 
 input, label {
@@ -136,32 +146,70 @@ input, label {
 }
 
  #add-to-cart {
-   font-size: 15pt; 
    background-color: yellow;
    display: inline;
    width: 58%;
-   font-size: 1em;
+   margin-left: 8%;
+   font-size: 0.6em;
+   float:right;
 }
 
 #price {
    display: inline;
    width:33%;
    font-size: 0.8em;
-   padding: 10%;
 }
 
 select {
    width:100%;
+   margin: 10% 0%
 }
 
 .price-and-cart {
-   width:100%;
+   min-width:100%;
+   display: flex;
+   align-items: center;
 }
 
 .product-border {
    border: 2px solid #000000;
-   max-width: 30%;
+   max-width: 40%;
 }
 
+.flex-container {
+   clear:both;
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   justify-content: center;
+   align-content: space-around;
+   padding: 3%;
+}
+
+/* .row{
+   display: flex;
+   flex-direction: row;
+   flex: 1 auto 1;
+   justify-content: space-between;
+
+} */
+
+.wrapper {
+   display: grid;
+   grid-template-columns: 10% 60% 10%;
+ }
+
+.wrapper-total {
+   display: grid;
+   grid-template-columns: 10% 60% 10%;
+   align-content:flex-start;
+   padding-top: 5%;
+   min-width: 100%;
+}
+
+.cart-total-description {
+   padding-left: 5%;
+   font-size: 20pt;
+}
 
 
