@@ -39,7 +39,7 @@ let allPackSizeOptions = [
   // logic to update price
   function updatePrice(glazingOptionPrice, packSizePrice) {
     let priceElement = document.querySelector('#price');
-    let basePrice = 2.49;
+    let basePrice = roll.basePrice;
 
     let finalPrice = (basePrice + glazingOptionPrice) * packSizePrice;
     // from https://stackoverflow.com/questions/11832914/how-to-round-to-at-most-2-decimal-places-if-necessary
@@ -96,6 +96,59 @@ let allPackSizeOptions = [
     option.value = item.priceAdaption;
     selectPackElement.add(option);
   }
+
+
+ // cart logic 
+let cart = [];
+
+class Roll {
+
+  constructor(rollType, rollGlazing, packSize, basePrice) {
+      this.type = rollType;
+      this.glazing =  rollGlazing;
+      this.size = packSize;
+      this.basePrice = basePrice;
+  }
+}
+
+//gets glazing and pack size from document
+function addToCart() {
+  let glazingElement = document.querySelector('#Glazing');
+  let packElement = document.querySelector('#Pack-size');
+  
+  // from: https://stackoverflow.com/questions/14976495/get-selected-option-text-with-javascript
+  rollGlazing = glazingElement.options[glazingElement.selectedIndex].text;
+  packSize = packElement.options[packElement.selectedIndex].text;
+
+  //makes new roll and adds to end of array
+  let newRoll = new Roll(rollType, rollGlazing, packSize, roll.basePrice)
+  cart.push(newRoll)
+
+  console.log(cart)
+}
+
+
+//gets rollType from URL
+const queryString = window.location.search;
+const params = new URLSearchParams(queryString);
+const rollType = params.get(`roll`);
+
+//gets roll based on rollType
+const roll = rolls[rollType]; //not period bc variable
+
+
+//updates header to reflect selected roll
+let header = document.querySelector('.tagline');
+header.innerText = rollType + ' Cinnamon Roll';
+
+
+//updates image to reflect selected roll
+document.querySelector('#image').src = 'images/' + roll.imageFile;
+
+
+//updates basePrice to reflect selected roll
+let basePriceElement = document.querySelector('#price');
+basePriceElement.innerText = '$' + roll.basePrice;
 
 
 
