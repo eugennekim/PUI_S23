@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <link rel="stylesheet" href="css/style.css">
+        <title>Gallery</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <div class="left">
+            <a href="index.html">
+                <img class="logo-image-size" src="images/logo-01.svg" alt="Logo-image">
+            </a>
+        </div>
+
+
+        <div class="middle">
+            <div class="nav-bar-links">
+                <a href="cart.html" class="nav-link">CART</a>
+                <a href="index.html" class="nav-link active">PRODUCTS</a>
+               
+            </div>
+            <div class="tagline"></div>
+        </div>
+            <div class="flex-container">
+            <img src="images/original-cinnamon-roll.jpg" class="product-border" id="image" alt="original-cinnamon-roll">
+            <div class="product-description">
+                <div>Customize our delicious, hand-made cinnamon roll to your liking!</div>
+                <br>
+                
+                <!-- form example adapted from  https://www.w3schools.com/ -->
+                <form>
+                    <label for="Glazing">Glazing:</label>
+                    <select name="Glazing" id="Glazing"></select>
+                    <br><br>
+
+                    <label for="Pack-size">Pack size:</label>
+                    <select name="Pack-size" id="Pack-size"></select>
+                    <br><br>
+                    <div class="price-and-cart">
+                        <p id="price"></p>
+                        <input onclick="addToCart()" id='add-to-cart' type="button" value="Add to Cart">
+                    </div>
+                </form>
+            </div>
+        </div>
+        <script src="scripts/rollsData.js"></script>
+        <script src="scripts/script.js"></script>
+    </body>
+</html>
+
