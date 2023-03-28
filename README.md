@@ -23,3 +23,8 @@ Homework 4 Repository link: https://github.com/eugennekim/PUI_S23/tree/main/solu
 Homework 5 Delpoyed website: https://eugennekim.github.io/PUI_S23/solution-hw5/index.html
 
 Homework 5 Repository Link: https://github.com/eugennekim/PUI_S23/tree/main/solution-hw5
+
+
+Homework 6 Delpoyed website: https://eugennekim.github.io/PUI_S23/solution-hw6/index.html
+
+Homework 6 Repository Link: https://github.com/eugennekim/PUI_S23/tree/main/solution-hw6

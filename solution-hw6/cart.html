@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <link rel="stylesheet" href="css/style.css">
+        <title>Gallery</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <div class="heading">
+            <div class="left">
+                <a href="index.html">
+                    <img class="logo-image-size" src="images/logo-01.svg" alt="Logo-image">
+                </a>
+            </div>
+            <div class="middle">
+                <div class="nav-bar-links">
+                    <a href="cart.html" class="nav-link active">
+                        CART
+                    </a>
+                    <a href="index.html" class="nav-link">
+                        PRODUCTS
+                    </a>
+                </div>
+                <div class="tagline">
+                    <p>
+                        Shopping Cart
+                    </p>
+                </div>
+                <div class="content">
+                    <div id="cartGroup">
+                    </div>
+                    <div class="cart-total wrapper-total">
+                        <div>
+                        </div>
+                        <div class="cart-total-description">Total</div>
+                        <div class="cart-margin" id="totalPrice"></div>
+                    </div>
+                    <div class="wrapper-total">
+                        <div></div>
+                        <div></div>
+                        <div>
+                            <button type="button" class="block">Checkout</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> 
+
+        <template id="cartItem">
+            <div class="cart-item wrapper">
+                <div>
+                    <img src="images/{imgSource}" class="cart-border" alt="original-cinnamon-roll" id="templateImage">
+                    <p class="remove-text" id="templateRemoveButton"> Remove</p>
+                </div>
+                <div class="cart-item-description">
+                    <div id="templateItemName">{itemName}</div>
+                    <div id="templateGlazingOption">{glazingOption}</div>
+                    <div id="templatePackSizeOption">{packSizeOption}</div>
+                </div>
+                <div class="cart-margin">
+                    <div id="templateCalculatedPrice">${calculatedPrice}</div> 
+                </div>
+            </div>
+        </template>
+
+        <script src="scripts/rollsData.js"></script>
+        <script src="scripts/storage.js"></script>
+        <script src="scripts/cartData.js"></script>
+    </body>
+</html> 
