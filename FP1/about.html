@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <link type="text/css" rel="stylesheet" href="css/materialize.css"  media="screen,projection"/>
+        <link rel="stylesheet" href="css/style.css">
+        <title>NewJeans</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+       <img src="images/newjeansbunnyfull.svg" class="grower"/>
+            <div id="menu">
+                <div id="menu-bar" onclick="menuOnClick()">
+                    <div id="bar1" class="bar"></div>
+                    <div id="bar2" class="bar"></div>
+                    <div id="bar3" class="bar"></div>
+                </div>
+                <div class="hbrgr" id="hbrgr">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                </div> 
+            </div>
+            <div class="middle">
+                <img src="images/newjeanstitle.svg" />
+                <p class="aboutCarouselTitle">Meet the Members!</p>
+                <img src="images/newjeansgroupphotoAbout.svg">
+            </div>
+            <div class="carousel">
+                <div class="carousel-item white-text" href="#one!" id="hyeinPhotoCardInfo" onclick="updatePhotocardInfo('hyein')">
+                  <img src="images/hyeinPhotocard.svg">
+                  <img src="images/hyeinName.svg" id="memberNamesAboutPage">
+                </div>
+                <div class="carousel-item white-text" href="#two!" id="minjiPhotoCardInfo" onclick="updatePhotocardInfo('minji')">
+                  <img src="images/minjiPhotocard.svg">
+                  <img src="images/minjiName.svg" id="memberNamesAboutPage">
+                </div>
+                <div class="carousel-item white-text" href="#three!" id="haerinPhotoCardInfo" onclick="updatePhotocardInfo('haerin')">
+                  <img src="images/haerinPhotocard.svg">
+                  <img src="images/haerinName.svg" id="memberNamesAboutPage">
+                </div>
+                <div class="carousel-item white-text" href="#four!" id="hanniPhotoCardInfo" onclick="updatePhotocardInfo('hanni')">
+                  <img src="images/hanniPhotocard.svg">
+                  <img src="images/hanniName.svg" id="memberNamesAboutPage">
+                </div>
+                <div class="carousel-item white-text" href="#five!" id="daniellePhotoCardInfo" onclick="updatePhotocardInfo('danielle')">
+                    <img src="images/daniellePhotocard.svg">
+                    <img src="images/danielleName.svg" id="memberNamesAboutPage">
+                </div>
+            </div>
+            <p id="photocardInfo">Hyein (해린) is a South Korean singer under ADOR. She is a member of the girl group NewJeans. ADOR: Jan 1, 2022-present. Aug 1, 2022.</p>
+        <img src="images/newjeansbunny.svg" class="indexbunny grower">
+        <script type="text/javascript" src="scripts/materialize.js"></script>
+        <script src="scripts/scripts.js"></script>
+    </body>
+</html>

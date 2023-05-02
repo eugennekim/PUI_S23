@@ -1,0 +1,378 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400&display=swap');
+
+body {
+    font-family: inter !important;
+    background-color: #C1DDFE;
+}
+
+#hamburgerMenu {
+    text-align: right;
+}
+.middle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.indexbunny {
+    display: block;
+     margin-left: auto;
+}
+
+.column {
+    float: left;
+    padding: 3%;
+}
+  
+.leftAttention {
+    width: 40%;
+    padding: 0%;
+}
+
+.rightAttention {
+    width: 48%;
+    padding-left: 5%;
+}
+
+.leftHypeBoy {
+    width: 55%;
+    padding:0%;
+    padding-top: 4%;
+}
+
+.rightHypeBoy {
+    width: 33%;
+    padding: 0%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    display: flex;
+    flex-direction: row;
+}
+
+.lyric {
+    padding:0%;
+    font-size: 2.2em;
+    font-weight: bold;
+    color: #0C39D0;
+}
+
+.lyricsLeft {
+    text-align: right;
+    padding-right: 1% !important;
+    width: 49%;
+}
+
+.lyricsRight {
+    text-align: left;
+    padding-left: 1% !important;
+    width: 49%;
+}
+
+.megaphoneimage {
+    width: 120%;
+}
+
+.sadFaceImage {
+    width: 120%;
+}
+
+.phoneimage {
+    width: 100%
+}
+
+.rightContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 4%;
+}
+
+
+.playsongImage {
+    padding-bottom: 6%;
+    width: 30%;
+}
+
+.attentionTitle {
+    padding-bottom: 3%;
+    width:70%
+}
+
+.hurtTitle {
+    padding-bottom: 3%;
+    width:40%
+}
+
+.groupPhotoOne {
+    widtH: 100%
+}
+
+.groupPhotoTwo {
+    width: 40%;
+    padding-left: 50%;
+}
+
+.groupPhotoFour {
+    width: 60%;
+    padding-left: 40%;
+}
+
+#groupPhotoAbout {
+    width: 50%;
+    align-content: center;
+}
+
+.aboutCarouselTitle {
+    font-size: 3em;
+    color: #0C39D0;
+}
+
+/* .carousel-item {
+    width:20% !important;
+    height: 30% !important;
+  } */
+
+  .carousel .carousel-item{
+    width: 550px !important;
+}
+
+.glow:hover:after{
+  box-shadow: 0px 0px 50px #0C39D0, inset 0px 0px 50px #0C39D0;
+  border-radius: 7%;
+}
+
+.glow:hover{
+  color: #0C39D0;
+  box-shadow: inset 0px 0px 80px 5px rgba(0,0,0,0);
+}
+
+/* glow effect derived from https://codepen.io/PrakharThakur/pen/oogqyE */
+.glow::after{
+  position: absolute;
+  height: 320%;
+  top: -2px;
+  left:-2px;
+  width: 100%;
+  content: "";
+  transition: all linear 0.3s;
+}
+
+  .carousel {
+    margin-top: 10% !important;
+    height: 50em !important;
+  }
+
+  .carouselCaption {
+    text-align: center;
+    font-size: 4em;
+    color:#0C39D0;
+  }
+
+  #memberNamesAboutPage {
+    width: 40% !important;
+    display: block;
+    padding-top: 3%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #photocardInfo {
+    width:60%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-size: 4em;
+    color:#0C39D0;
+  }
+
+/*  grow hover effect derived from https://codepen.io/AdamCCFC/pen/WvzBKq  */
+  .grower {
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+  }
+
+  .grower:hover {
+    transition: all .2s ease-in-out;
+    transform: scale(1.15);
+  }
+
+.star {
+    position: absolute;
+}
+
+#star1 {
+    height: 6%;
+    right: 4%;
+    top: 36%;
+}
+
+#star2 {
+    height: 7%;
+    right: 57%;
+    top: 26%;
+}
+
+#star3 {
+    height: 14%;
+    left: 30%;
+    top: 10%;
+}
+
+#star4 {
+    height: 6%;
+    left: 8%;
+    top: 43%;
+}
+
+#star5 {
+    height: 4%;
+    right: 8%;
+    top: 8%;
+}
+
+#star6 {
+    height: 7%;
+    right: 30%;
+    top: 40%;
+}
+
+#star7 {
+    height: 10%;
+    right: 37%;
+    top: 55%;
+}
+
+#star8 {
+    height: 8%;
+    left: 45%;
+    top: 10%;
+}
+
+#star9 {
+    height: 5%;
+    left: 3%;
+    top: 35%;
+}
+
+#star10 {
+    height: 5%;
+    right: 6%;
+    top: 26%;
+}
+
+#star16 {
+    height: 7%;
+    left: 3%;
+    top: 86%;
+}
+
+#star17 {
+    height: 8%;
+    right: 47%;
+    top: 43%;
+}
+
+#star18 {
+    height: 6%;
+    left: 45%;
+    top: 40%;
+}
+
+#star19 {
+    height: 10%;
+    left: 13%;
+    top: 10%;
+}
+
+#star20 {
+    height: 8%;
+    right: 6%;
+    top: 26%;
+}
+
+/* 
+hamburger menu derived from https://codepen.io/alvarotrigo/pen/oNGzoYd */
+
+
+#menu {
+    z-index: 2;
+    position: absolute;
+    margin-left: 90%;
+    margin-right: 0;
+  }
+  
+  #menu-bar {
+    width: 45px;
+    height: 40px;
+    margin: 30px 0 20px 20px;
+    cursor: pointer;
+  }
+  
+  .bar {
+    height: 5px;
+    width: 100%;
+    background-color: #000000;
+    display: block;
+    border-radius: 5px;
+    transition: 0.3s ease;
+  }
+  
+  #bar1 {
+    transform: translateY(-4px);
+  }
+  
+  #bar3 {
+    transform: translateY(4px);
+  }
+  
+  .hbrgr {
+    transition: 0.3s ease;
+    display: none;
+  }
+  
+  .hbrgr ul {
+    padding: 0 22px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .hbrgr li {
+    list-style: none;
+    padding: 12px 0;
+    text-align: right;
+    max-width: 8%;
+  }
+  
+  .hbrgr li a {
+    color: white;
+    background-color: transparent !important;
+    font-size: 20px;
+    text-decoration: none;
+  }
+  
+  .hbrgr li a:hover {
+    font-weight: bold;
+  }
+  
+  .change {
+    display: block;
+  }
+  
+  .change .bar {
+    background-color: white;
+  }
+  
+  .change #bar1 {
+    transform: translateY(4px) rotateZ(-45deg);
+  }
+  
+  .change #bar2 {
+    opacity: 0;
+  }
+  
+  .change #bar3 {
+    transform: translateY(-6px) rotateZ(45deg);
+  }
