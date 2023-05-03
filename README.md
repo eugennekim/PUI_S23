@@ -35,5 +35,6 @@ Final Project Delpoyed website: https://eugennekim.github.io/PUI_S23/FP1/index.h
 Final Project Repository Link: https://github.com/eugennekim/PUI_S23/tree/main/FP1
 
 Final Project Video Watch here: https://youtu.be/JCH9D9IcKDU
-Final Project Video Watch here: https://github.com/eugennekim/PUI_S23/tree/main/FP1/EugeneKimFinalProjectWriteUp.pdf
+
+Final Project Write-Up here: https://github.com/eugennekim/PUI_S23/tree/main/FP1/EugeneKimFinalProjectWriteUp.pdf
 
