@@ -3,18 +3,18 @@
     <head>
         <!-- from https://www.w3schools.com/cssref/tryit.php?filename=trycss3_media_bg -->
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link type="text/css" rel="stylesheet" href="css/materialize.css"  media="screen,projection"/>
+        <link type="text/css" rel="stylesheet" href="css/materialize.css"  media="screen"/>
         <link rel="stylesheet" href="css/style.css">
         <title>NewJeans</title>
         <meta charset="utf-8">
     </head>
     <body>
-        <img src="images/newjeansstar.svg" class="star" id="star6"/>
-        <img src="images/newjeansstar.svg" class="star" id="star7"/>
-        <img src="images/newjeansstar.svg" class="star" id="star8"/>
-        <img src="images/newjeansstar.svg" class="star" id="star9"/>
-        <img src="images/newjeansstar.svg" class="star" id="star10"/>
-        <a href="index.html"><img src="images/newjeansbunnyfull.svg" class="bunny grower"/></a>
+        <img src="images/newjeansstar.svg" class="star" id="star6"  alt=" Decorative star"/>
+        <img src="images/newjeansstar.svg" class="star" id="star7"  alt=" Decorative star"/>
+        <img src="images/newjeansstar.svg" class="star" id="star8"  alt=" Decorative star"/>
+        <img src="images/newjeansstar.svg" class="star" id="star9"  alt=" Decorative star"/>
+        <img src="images/newjeansstar.svg" class="star" id="star10"  alt=" Decorative star"/>
+        <a href="index.html"><img src="images/newjeansbunnyfull.svg" class="bunny grower" alt="New Jeans Bunny Mascot"/></a>
         <div id="menu">
             <div id="menu-bar" onclick="menuOnClick()">
                 <div id="bar1" class="bar"></div>
@@ -33,14 +33,14 @@
         <div class="row">
             <div class="column leftHypeBoy">
                 <div class="rightContent">
-                    <img src="images/Hype Boy.svg" class="attentionTitle"/>
+                    <img src="images/HypeBoy.svg" class="attentionTitle" alt="Hype Boy Title"/>
                     <ul class="collapsible">
                         <li>
                             <div class="collapsible-header">
-                                <img src="images/playsong.svg" class="playsongImage"/>
+                                <img src="images/playsong.svg" class="playsongImage" alt="Play Song Image Icon"/>
                             </div>
                             <div class="collapsible-body">
-                                <iframe src="https://www.youtube.com/embed/9wUKhEgnllc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                                <iframe src="https://www.youtube.com/embed/9wUKhEgnllc" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                             </div>
                         </li>
                     </ul>
@@ -130,11 +130,11 @@
                 </div>
             </div>
             <div class="column rightHypeBoy">
-                <img src="images/newjeansphone.svg" class="phoneimage"/>
+                <img src="images/newjeansphone.svg" class="phoneimage" alt="Flip Phone Image Icon"/>
             </div>
             </div>
-          </div>
-          <a href="about.html"><img src="images/newjeansgroupphoto2.svg" class="groupPhotoTwo grower"/></a>
+          <a href="about.html"><img src="images/newjeansgroupphoto2.svg" class="groupPhotoTwo grower" alt="NewJeans Group Photo"/></a>
+         <!-- type attribute necessary for materialize, even though it errors on the validator -->
         <script type="text/javascript" src="scripts/materialize.js"></script>
         <script src="scripts/scripts.js"></script>
     </body>

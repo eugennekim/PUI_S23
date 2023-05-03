@@ -9,7 +9,7 @@
         <meta charset="utf-8">
     </head>
     <body>
-        <a href="index.html"><img src="images/newjeansbunnyfull.svg" class="bunny grower"/></a>
+        <a href="index.html"><img src="images/newjeansbunnyfull.svg" class="bunny grower" alt="New Jeans Bunny Mascot"/></a>
         <div id="menu">
             <div id="menu-bar" onclick="menuOnClick()">
                 <div id="bar1" class="bar"></div>
@@ -26,28 +26,29 @@
             </div> 
         </div>
         <div class="middle">
-            <img src="images/newjeanstitle.svg" class="indexTitle" />
+            <img src="images/newjeanstitle.svg" class="indexTitle" alt="New Jeans Title"/>
             <div class="aboutCarouselTitle">NewJeans 1st EP ‘New Jeans’</div>
             <div id="indexCarousel" class="carousel">
-                <!-- carousel links in materialize need an href even though it errors on the validator -->
+                <!-- carousel links in materialize need an href and duplicate id="memberNamesAboutPage" needed even though it errors on the validator -->
                 <div class="carousel-item glow white-text" href="attention.html">
-                    <img src="images/megaphoneCarousel.svg"><img src="images/attentionCarouselTitle.svg" id="memberNamesAboutPage">
+                    <img src="images/megaphoneCarousel.svg" alt="Megaphone Image Icon"><img src="images/attentionCarouselTitle.svg" id="memberNamesAboutPage" alt="Attention Title">
                 </div>
                 <div class="carousel-item glow white-text" href="hypeBoy.html">
-                    <img src="images/flipphoneCarousel.svg"><img src="images/hypeboyCarouselTitle.svg" id="memberNamesAboutPage">
+                    <img src="images/flipphoneCarousel.svg" alt="Flip Phone Image Icon"><img src="images/hypeboyCarouselTitle.svg" id="memberNamesAboutPage" alt="Hype Boy Title">
                 </div>
                 <div class="carousel-item glow white-text" href="cookie.html">
-                    <img src="images/cookieCarousel.svg"><img src="images/cookieCarouselTitle.svg" id="memberNamesAboutPage">
+                    <img src="images/cookieCarousel.svg" alt="Cookie Image Icon"><img src="images/cookieCarouselTitle.svg" id="memberNamesAboutPage" alt="Cookie Title">
                 </div>
                 <div class="carousel-item glow white-text" href="hurt.html">
-                    <img src="images/hurtCarousel.svg"><img src="images/hurtCarouselTitle.svg" id="memberNamesAboutPage">
+                    <img src="images/hurtCarousel.svg" alt="Sad Face Image Icon"><img src="images/hurtCarouselTitle.svg" id="memberNamesAboutPage" alt="Hurt Title">
                 </div>
                 <div class="carousel-item glow white-text" href="about.html">
-                    <img src="images/groupphotoCarousel.svg"><img src="images/aboutCarouselTitle.svg" id="memberNamesAboutPage">
+                    <img src="images/groupphotoCarousel.svg" alt="NewJeans Group Photo"><img src="images/aboutCarouselTitle.svg" id="memberNamesAboutPage" alt="About Title">
                 </div>
             </div>
         </div>
-        <img src="images/newjeansbunny.svg" class="indexbunny">
+        <img src="images/newjeansbunny.svg" class="indexbunny" alt="New Jeans Bunny Mascot">
+        <!-- type attribute necessary for materialize, even though it errors on the validator -->
         <script type="text/javascript" src="scripts/materialize.js"></script>
         <script src="scripts/scripts.js"></script>
     </body>

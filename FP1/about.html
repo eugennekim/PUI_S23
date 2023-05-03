@@ -3,13 +3,13 @@
     <head>
         <!-- from https://www.w3schools.com/cssref/tryit.php?filename=trycss3_media_bg -->
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link type="text/css" rel="stylesheet" href="css/materialize.css"  media="screen,projection"/>
+        <link type="text/css" rel="stylesheet" href="css/materialize.css"  media="screen"/>
         <link rel="stylesheet" href="css/style.css">
         <title>NewJeans</title>
         <meta charset="utf-8">
     </head>
     <body>
-        <a href="index.html"><img src="images/newjeansbunnyfull.svg" class="bunny grower"/></a>
+        <a href="index.html"><img src="images/newjeansbunnyfull.svg" class="bunny grower" alt="New Jeans Bunny Mascot"/></a>
         <div id="menu">
             <div id="menu-bar" onclick="menuOnClick()">
                 <div id="bar1" class="bar"></div>
@@ -26,36 +26,38 @@
             </div> 
         </div>
         <div class="middle">
-            <img src="images/newjeanstitle.svg" />
+            <img src="images/newjeanstitle.svg" alt="New Jeans Title" />
             <p class="aboutCarouselTitle">Meet the Members!</p>
-            <img src="images/newjeansgroupphotoAbout.svg">
+            <img src="images/newjeansgroupphotoAbout.svg" alt="New Jeans Group Photo">
             <p class="aboutCarouselTitle">NewJeans (뉴진스) is a 5-member girl group under ADOR and HYBE Labels.<br>
                 The members consist of Minji, Hanni, Danielle, Haerin, and Hyein.</p>
         </div>
         <div class="carousel">
+        <!-- duplicate id="memberNamesAboutPage" needed even though it errors on the validator -->
             <div class="carousel-item white-text" id="hyeinPhotoCardInfo" onclick="updatePhotocardInfo('hyein')">
-                <img src="images/hyeinPhotocard.svg">
-                <img src="images/hyeinName.svg" id="memberNamesAboutPage">
+                <img src="images/hyeinPhotocard.svg" alt="Image of Hyein">
+                <img src="images/hyeinName.svg" id="memberNamesAboutPage" alt="Image of Hyein Name">
             </div>
             <div class="carousel-item white-text" id="minjiPhotoCardInfo" onclick="updatePhotocardInfo('minji')">
-                <img src="images/minjiPhotocard.svg">
-                <img src="images/minjiName.svg" id="memberNamesAboutPage">
+                <img src="images/minjiPhotocard.svg" alt="Image of Minji">
+                <img src="images/minjiName.svg" id="memberNamesAboutPage" alt="Image of Minji Name">
             </div>
             <div class="carousel-item white-text" id="haerinPhotoCardInfo" onclick="updatePhotocardInfo('haerin')">
-                <img src="images/haerinPhotocard.svg">
-                <img src="images/haerinName.svg" id="memberNamesAboutPage">
+                <img src="images/haerinPhotocard.svg" alt="Image of Haerin">
+                <img src="images/haerinName.svg" id="memberNamesAboutPage" alt="Image of Haerin Name">
             </div>
             <div class="carousel-item white-text" id="hanniPhotoCardInfo" onclick="updatePhotocardInfo('hanni')">
-                <img src="images/hanniPhotocard.svg">
-                <img src="images/hanniName.svg" id="memberNamesAboutPage">
+                <img src="images/hanniPhotocard.svg" alt="Image of Hanni">
+                <img src="images/hanniName.svg" id="memberNamesAboutPage" alt="Image of Hanni Name">
             </div>
             <div class="carousel-item white-text" id="daniellePhotoCardInfo" onclick="updatePhotocardInfo('danielle')">
-                <img src="images/daniellePhotocard.svg">
-                <img src="images/danielleName.svg" id="memberNamesAboutPage">
+                <img src="images/daniellePhotocard.svg" alt="Image of Danielle">
+                <img src="images/danielleName.svg" id="memberNamesAboutPage" alt="Image of Danielle Name">
             </div>
         </div>
         <p id="photocardInfo">Hyein (해린) is a South Korean singer under ADOR. She is a member of the girl group NewJeans. ADOR: Jan 1, 2022-present. Aug 1, 2022.</p>
-        <img src="images/newjeansbunny.svg" class="indexbunnyAbout">
+        <img src="images/newjeansbunny.svg" class="indexbunnyAbout" alt="New Jeans Bunny Mascot">
+        <!-- type attribute necessary for materialize, even though it errors on the validator -->
         <script type="text/javascript" src="scripts/materialize.js"></script>
         <script src="scripts/scripts.js"></script>
     </body>
