@@ -29,6 +29,11 @@ Homework 6 Delpoyed website: https://eugennekim.github.io/PUI_S23/solution-hw6/i
 
 Homework 6 Repository Link: https://github.com/eugennekim/PUI_S23/tree/main/solution-hw6
 
+
 Final Project Delpoyed website: https://eugennekim.github.io/PUI_S23/FP1/index.html
 
 Final Project Repository Link: https://github.com/eugennekim/PUI_S23/tree/main/FP1
+
+Final Project Video Watch here: https://youtu.be/JCH9D9IcKDU
+Final Project Video Watch here: https://github.com/eugennekim/PUI_S23/tree/main/FP1/EugeneKimFinalProjectWriteUp.pdf
+
