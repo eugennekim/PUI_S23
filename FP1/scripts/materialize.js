@@ -10775,12 +10775,16 @@ $jscomp.polyfill = function (e, r, p, m) {
           return false;
         } else if (!this.options.fullWidth) {
           var clickedIndex = $(e.target).closest('.carousel-item').index();
-          var diff = this._wrap(this.center) - clickedIndex;
+          var diff = this._wrap(this.center % this.count) - clickedIndex;
 
           // Disable clicks if carousel was shifted by click
           if (diff !== 0) {
             e.preventDefault();
             e.stopPropagation();
+          }  else {
+            if(document.querySelector(".active").getAttribute("href")){
+              window.location.href = document.querySelector(".active").getAttribute("href")
+            }
           }
           this._cycleTo(clickedIndex);
         }

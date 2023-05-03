@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html lang="en-US">
     <head>
-        <link type="text/css" rel="stylesheet" href="css/materialize.css"  media="screen,projection"/>
+        <!-- from https://www.w3schools.com/cssref/tryit.php?filename=trycss3_media_bg -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link type="text/css" rel="stylesheet" href="css/materialize.css"  media="screen"/>
         <link rel="stylesheet" href="css/style.css">
         <title>NewJeans</title>
         <meta charset="utf-8">
@@ -24,28 +26,28 @@
             </div> 
         </div>
         <div class="middle">
-            <img src="images/newjeanstitle.svg" />
-            <div>NewJeans 1st EP ‘New Jeans’</div>
-            <div class="carousel">
-                <div class="carousel-item glow white-text" href="#one!" id="hyeinPhotoCardInfo">
-                    <img src="images/megaphoneCarousel.svg">
+            <img src="images/newjeanstitle.svg" class="indexTitle" />
+            <div class="aboutCarouselTitle">NewJeans 1st EP ‘New Jeans’</div>
+            <div id="indexCarousel" class="carousel">
+                <!-- carousel links in materialize need an href even though it errors on the validator -->
+                <div class="carousel-item glow white-text" href="attention.html">
+                    <img src="images/megaphoneCarousel.svg"><img src="images/attentionCarouselTitle.svg" id="memberNamesAboutPage">
                 </div>
-                <div class="carousel-item glow white-text" href="#two!" id="minjiPhotoCardInfo">
-                    <img src="images/flipphoneCarousel.svg">
+                <div class="carousel-item glow white-text" href="hypeBoy.html">
+                    <img src="images/flipphoneCarousel.svg"><img src="images/hypeboyCarouselTitle.svg" id="memberNamesAboutPage">
                 </div>
-                <div class="carousel-item glow white-text" href="#three!" id="haerinPhotoCardInfo">
-                    <img src="images/cookieCarousel.svg">
+                <div class="carousel-item glow white-text" href="cookie.html">
+                    <img src="images/cookieCarousel.svg"><img src="images/cookieCarouselTitle.svg" id="memberNamesAboutPage">
                 </div>
-                <div class="carousel-item glow white-text" href="#four!" id="hanniPhotoCardInfo">
-                    <img src="images/hurtCarousel.svg">
+                <div class="carousel-item glow white-text" href="hurt.html">
+                    <img src="images/hurtCarousel.svg"><img src="images/hurtCarouselTitle.svg" id="memberNamesAboutPage">
                 </div>
-                <div class="carousel-item glow white-text" href="#five!" id="daniellePhotoCardInfo">
-                    <img src="images/groupphotoCarousel.svg">
+                <div class="carousel-item glow white-text" href="about.html">
+                    <img src="images/groupphotoCarousel.svg"><img src="images/aboutCarouselTitle.svg" id="memberNamesAboutPage">
                 </div>
             </div>
-            <div id="carouselCaption">caption</div>
         </div>
-        <img src="images/newjeansbunny.svg" class="indexbunny grower">
+        <img src="images/newjeansbunny.svg" class="indexbunny">
         <script type="text/javascript" src="scripts/materialize.js"></script>
         <script src="scripts/scripts.js"></script>
     </body>

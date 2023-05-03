@@ -27,7 +27,3 @@
         document.getElementById("menu-bar").classList.toggle("change");
         document.getElementById("hbrgr").classList.toggle("change");
       }
-
-document.addEventListener('DOMContentLoaded', function() {
-
-});
